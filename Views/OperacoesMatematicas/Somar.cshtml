@@ -2,8 +2,19 @@
     ViewData["Title"] = "Somar";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Somar</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Operação Matemática Somar</h1>
+
+<p>Utilize o formulário abaixo para somar dois números</p>
+
+
+<form action="ResultadoSoma" method="post">
+    <label for="number1">Número 1</label>  <br> 
+    <input type="number" name="number1" id="number1"> <br><br>
+
+    <label for="number2">Número 2</label> <br> 
+    <input type="number" name="number2" id="number2"> <br><br>
+    
+    <button type="submit">Somar</button>
+</form>
+
 
