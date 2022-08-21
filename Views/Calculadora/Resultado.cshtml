@@ -2,5 +2,26 @@
     ViewData["Title"] = "Resultado";
 }
 
-<h1>Resultado</h1>
+@{
+    var operacao = @Model.Operacao;
+}
+
+
+<h1>Resultado da @operacao</h1>
+
+
+@if (@Model.Operacao == "Soma") 
+{
+<p>A soma de @Model.Number1 + @Model.Number2 é igual a @(Model.Number1 + Model.Number2) </p>
+}
+else if (@Model.Operacao == "Subtracao") {
+<p>A subtracão de @Model.Number1 - @Model.Number2 é igual a @(Model.Number1 - Model.Number2) </p>
+}
+else if (@Model.Operacao == "Multiplicacao") {
+<p>A multiplicação de @Model.Number1 * @Model.Number2 é igual a @(Model.Number1 * Model.Number2) </p>
+}
+else
+{
+<p>A divisão de @Model.Number1 / @Model.Number2 é igual a @(Model.Number1 / Model.Number2) </p>
+}
 

@@ -30,7 +30,7 @@ public class CalculadoraController : Controller
 
     public IActionResult Resultado([FromForm] OperacaoMatematica operacaoMatematica)
     {
-        return View();
+        return View(operacaoMatematica);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
