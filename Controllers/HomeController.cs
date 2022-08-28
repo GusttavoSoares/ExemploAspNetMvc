@@ -38,11 +38,6 @@ public class HomeController : Controller
         return $"Chegou aqui {q} e {nome}";
     }
 
-    // public string TesteFormData([FromForm] string nome, [FromForm] string email)
-    // {
-    //     return $"Nome: {nome}, E-mail: {email}";
-    // }
-
     public IActionResult Formulario() 
     {
         return View();

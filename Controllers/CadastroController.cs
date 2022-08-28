@@ -4,15 +4,6 @@ using ExemploAspNetMvc.Models;
 
 namespace ExemploAspNetMvc.Controllers;
 
-
-public class User 
-{
-    public string NomeCompleto { get; set; }
-    public string Email { get; set; }
-    public string Senha { get; set; }
-}
-
-
 public class CadastroController : Controller
 {
     private readonly ILogger<CadastroController> _logger;
@@ -21,7 +12,6 @@ public class CadastroController : Controller
     {
         _logger = logger;
     }
-
 
     public IActionResult Formulario()
     {
