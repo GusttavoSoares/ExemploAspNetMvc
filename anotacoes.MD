@@ -25,3 +25,9 @@ pequenas quantidades de dados, dados entre views
 Model(ViewModel)
 Garantia de tipagem na view
 Erros em tempo de compilação
+
+Anotação 30-8
+Razor
+Sintaxe de marcação para inserir código baseado em .NET em páginas da web
+.cshtml - extensão de arquivo
+usa o símbolo para fazer a @ transição de HTML para C# 
